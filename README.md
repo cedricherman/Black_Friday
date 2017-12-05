@@ -10,6 +10,8 @@ You will need the following python installation: <br>
 - sci-kit learn version = 0.19.0
 - SciPy version = 0.19.1
 
+It is recomended to have Python 3 installed. Not sure if this code will break with Python 2.x
+
 ### Create a virtual environment (Optional but recommended)
 It is common practice to keep your current Root Python environment clean and create a new environment for a new study/project.
 
