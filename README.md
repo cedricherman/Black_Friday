@@ -10,7 +10,9 @@ You will need the following python installation: <br>
 - sci-kit learn version = 0.19.0
 - SciPy version = 0.19.1
 
-### Install packages if necessary
+### Create a virtual environment (Optional but recommended)
+It is common practice to keep your current Root Python environment clean and create a new environment for a new study/project.
+
 #### Using Anaconda
 If you have the Anaconda distribution of **Python 3** installed, then run the commands below.
 
@@ -18,9 +20,9 @@ If you have the Anaconda distribution of **Python 3** installed, then run the co
 - `\usr> source activate blackfriday`<br>
   or
 - `\usr> activate blackfriday` on Windows
-#### Using pip and virtualenv
 
-- Create a virtual environment for this tutorial (if you want to keep your current Root Python environment clean)
+#### Using pip and virtualenv
+- From your command prompt/console
     - `\usr> (sudo) pip install virtualenv`
     - `\usr> virtualenv -p python3 blackfriday`
     - `\usr> source blackfriday/bin/activate`
