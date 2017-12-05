@@ -15,7 +15,7 @@ You will need the following python installation: <br>
 If you have the Anaconda distribution of **Python 3** installed, then run the commands below.
 
 - `$ conda env create -f environment.yml`
-- `$ source activate blackfriday`
+- `$ source activate blackfriday`<br>
   or
 - `$ activate blackfriday` on Windows
 #### Using pip and virtualenv
