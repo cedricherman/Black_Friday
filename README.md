@@ -29,4 +29,6 @@ If you have the Anaconda distribution of **Python 3** installed, then run the co
 - `\usr> pip install -r requirements.txt`
 
 
-
+### Jupyter Notebook users
+If you want to use Jupyter, no need to add jupyter (corre,client,...) to your newly created environment. You can simply 
+<a href="https://stackoverflow.com/questions/39604271/conda-environments-not-showing-up-in-jupyter-notebook"> I don't think the other answers are working</a>
