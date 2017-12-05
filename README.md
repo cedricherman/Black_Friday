@@ -3,7 +3,7 @@ This is work is based on purchase data. The goal is to model customer behavior s
 
 ### Setup
 You will need the following python installation: <br>
-`Python version = 3.5.4`
+- `Python version = 3.5.4`
 `Pandas version = 0.20.3`
 `NumPy version = 1.13.1`
 `Matplotlib version = 2.0.2`
