@@ -14,7 +14,7 @@ You will need the following python installation: <br>
 It is common practice to keep your current Root Python environment clean and create a new environment for a new study/project.
 
 #### Using Anaconda
-If you have the Anaconda distribution of **Python 3** installed, then run the commands below.
+If you have the Anaconda distribution of **Python 3** installed, then run the commands below in your OS console:
 
 - `\usr> conda env create -f environment.yml`
 - `\usr> source activate blackfriday`<br>
@@ -22,7 +22,7 @@ If you have the Anaconda distribution of **Python 3** installed, then run the co
 - `\usr> activate blackfriday` on Windows
 
 #### Using pip and virtualenv
-- From your command prompt/console
+- From your console:
     - `\usr> (sudo) pip install virtualenv`
     - `\usr> virtualenv -p python3 blackfriday`
     - `\usr> source blackfriday/bin/activate`
