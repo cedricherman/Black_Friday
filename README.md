@@ -14,17 +14,17 @@ You will need the following python installation: <br>
 #### Using Anaconda
 If you have the Anaconda distribution of **Python 3** installed, then run the commands below.
 
-- `$ conda env create -f environment.yml`
-- `$ source activate blackfriday`<br>
+- `\usr> conda env create -f environment.yml`
+- `\usr> source activate blackfriday`<br>
   or
-- `$ activate blackfriday` on Windows
+- `\usr> activate blackfriday` on Windows
 #### Using pip and virtualenv
 
 - Create a virtual environment for this tutorial (if you want to keep your current Root Python environment clean)
-    - `$ (sudo) pip install virtualenv`
-    - `$ virtualenv -p python3 blackfriday`
-    - `$ source blackfriday/bin/activate`
-- `$ pip install -r requirements.txt`
+    - `\usr> (sudo) pip install virtualenv`
+    - `\usr> virtualenv -p python3 blackfriday`
+    - `\usr> source blackfriday/bin/activate`
+- `\usr> pip install -r requirements.txt`
 
 
 
