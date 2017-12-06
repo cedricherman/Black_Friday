@@ -36,4 +36,4 @@ If you want to use Jupyter, no need to add jupyter (core,client,...) to your new
 
 `\usr> python -m ipykernel install --user --name blackfriday --display-name "What_you_see_in_jupyter"`
 
-Once you start your Jupyter Notebook, under kernel->change kernel you will see all of your added environment including  "What_you_see_in_jupyter"
+Once you start your Jupyter Notebook, look at your menu bar and under kernel->change kernel you will see all of your added environment including  "What_you_see_in_jupyter"
