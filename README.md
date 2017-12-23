@@ -5,7 +5,7 @@ First, we will take a look at the data and make some relevant plot to get a gene
 
 Secondly, we will conduct  a correlation analysis and see how we combine or perhaps leave out some of the information provided. This is typically called feature extraction.
 
-Then we will start applying regressor model to predict purchase price such Linear Regression, Decision Tree, Random forest and Gradient Boosting. For each model, we can look at ways to improve its accuracy going back to extreme cases of good and bad predictions.
+Then we will start applying regressor model to predict purchase price such Linear Regression, Decision Tree, Random forest and Gradient Boosting as well as Stacking. For each model, we can look at ways to improve its accuracy going back to extreme cases of good and bad predictions.
 
 ### Setup
 You will need the following python installation: <br>
