@@ -108,7 +108,35 @@ if __name__ == "__main__":
     X = hstack( X_features )
 
 
-#    df_mod.iloc[0,'Gender'] + df_mod.Prod_cat123
 
+    # make all possible combination of Gender-Prodcat123 (Python)
+    Prodcat123_list = df_mod.Prod_cat123.value_counts().index.tolist()
+    Gender_list = df_mod.Gender.value_counts().index.tolist()
+    Combi_list = [g+'-'+p for p in Prodcat123_list for g in Gender_list]
+    # find out missing combinations
+    encoder_combi = df_mod.Gender_Prod_cat123.value_counts().index.tolist()
+    Missing_combi = [k for k in Combi_list if k not in encoder_combi]    
+    
+    # make all possible combination of Gender-Prodcat123 (Pandas, Numpy)
+    import numpy as np
+    Prodcat123_u = df_mod.Prod_cat123.unique()
+    Gender_u = df_mod.Gender.unique()
+    # repeat for one and tile for the other
+    Prodcat123_list = np.tile(Prodcat123_u, Gender_u.shape[0])
+    Gender_list = Gender_u.repeat(Prodcat123_u.shape[0])
+    Combi_list = Gender_list + '-' + Prodcat123_list
+    # find out missing combinations
+    encoder_combi = df_mod.Gender_Prod_cat123.unique()
+    df_combi = pd.DataFrame(Combi_list, columns = ['Complete'])
+    df_combi['Incomplete'] = np.concatenate(\
+            (encoder_combi, \
+             np.array(np.nan).repeat(Combi_list.shape[0] - encoder_combi.shape[0]) ) )
+    Missing_combi = df_combi.loc[~df_combi.Complete.isin(df_combi.Incomplete), 'Complete'].values
+    
+    
+    encoder_combi = df_mod.Gender_Prod_cat123.value_counts()
+    s_combi = pd.Series(Combi_list, index = Combi_list, columns = ['Complete'])
+    
+    # add the 3 missing instances
 
 
