@@ -1,7 +1,7 @@
 # Black_Friday
 This work is based on purchase data. The goal is to model customer behavior so that we can predict their purchase amount on a monthly basis. After features extraction, it employs Linear Regression (Closed-form), Ridge (SAG), Decision Tree, Random forest, Gradient Boosting and a stacking example.
 
-First, we will take a look at the data and make some relevant plot to get a general sense of customer behavior.
+First, we will take a look at the data and make some relevant plot to get a general sense of customer behavior and purchase data. For instances, each product purchase price varies between 25% to 80%.
 
 Secondly, we will conduct a correlation analysis and see how we might combine or perhaps leave out some of the information provided. This is typically called feature extraction.
 
