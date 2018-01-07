@@ -26,9 +26,7 @@ It is common practice to keep your current Root Python environment clean and cre
 If you have the Anaconda distribution of **Python 3** installed, then run the commands below in your OS console:
 
 - `\usr> conda env create -f environment.yml`
-- `\usr> source activate blackfriday` on Macs and Linux <br>
-  or
-- `\usr> activate blackfriday` on Windows
+- `\usr> source activate blackfriday` on Macs and Linux or `\usr> activate blackfriday` on Windows
 
 #### Using pip and virtualenv
 - From your console:
