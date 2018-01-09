@@ -159,7 +159,7 @@ def prepare_Data(df, encoders = None ):
             df_cpy[col] = temp_col.cat.codes    
         
         # encode using sklearn
-        X_features = []
+        X_features = {}
         encoder_dict = {}
         feature_names = df_cpy.columns.tolist()
         if 'Purchase' in feature_names:
@@ -168,8 +168,8 @@ def prepare_Data(df, encoders = None ):
             # OneHotEncoder() outputs sparse matrix by default
             this_encoder = OneHotEncoder()
             # populate X_features with sparse matrix and associated name as tuple
-            X_features.append( \
-            (this_encoder.fit_transform(df_cpy.loc[:,f].values.reshape(-1,1)), f) )
+            X_features[f] =\
+            this_encoder.fit_transform(df_cpy.loc[:,f].values.reshape(-1,1))
             # keep encoder
             encoder_dict[f] = this_encoder
             
@@ -189,14 +189,14 @@ def prepare_Data(df, encoders = None ):
         # check for new value coded as -1
         df_cpy = check_ProdID(df_cpy)
         
-        X_features = []
+        X_features = {}
         encoder_dict = encoders[1]
         feature_names = df_cpy.columns.tolist()
         for f in feature_names:
             # populate X_features with sparse matrix and associated name as tuple
 #            print('one hot on {}'.format(f))
-            X_features.append( \
-            (encoder_dict[f].transform(df_cpy.loc[:,f].values.reshape(-1,1)), f) )
+            X_features[f] = \
+            encoder_dict[f].transform(df_cpy.loc[:,f].values.reshape(-1,1))
             
         # return one-hot encoded features
         return X_features
