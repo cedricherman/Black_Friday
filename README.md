@@ -1,11 +1,11 @@
 # Black_Friday
 This work is based on purchase data. The goal is to model customer behavior so that we can predict their purchase amount on a monthly basis. After features extraction, it employs Linear Regression (Closed-form), Ridge (SAG), Decision Tree, Random forest, Gradient Boosting and a stacking example.
 
-First, we will take a look at the data and make some relevant plot to get a general sense of customer behavior and purchase data. For instances, each product purchase price varies between 25% to 80%.
+First, we will take a look at the data and make some relevant plot to get a general sense of customer behavior and purchase data (aka __Exploratory Data Analysis__). For instances, each product purchase price varies between 25% to 80%.
 
-Secondly, we will conduct a correlation analysis and see how we might combine or perhaps leave out some of the information provided. This is typically called feature extraction.
+Secondly, we will conduct a correlation analysis and see how we might combine or perhaps leave out some of the information provided. This is typically called __feature extraction__.
 
-Then we will start applying regressor model to predict purchase price such Linear Regression, Decision Tree, Random forest and Gradient Boosting as well as Stacking. For each model, we can look at ways to improve its accuracy going back to extreme cases of good and bad predictions.
+Finally we will start applying regressor model to predict purchase price such as __Linear Regression, Decision Tree, Random forest and Gradient Boosting as well as Stacking__. For each model, we can look at ways to improve its accuracy going back to extreme cases of good and bad predictions.
 
 ### Setup
 You will need the following python installation: <br>
